@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>PictureDiary</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<!-- The css styles -->
+		<link href="reset.css" type="text/css" rel="stylesheet" type="text/css">
+		<link href="main.css" type="text/css" rel="stylesheet" type="text/css">
+		<!-- end of styles-->
+		
+		<!-- js files for app-->
+		<script src="cordova.js"></script>
+		<script src="IndexedDBShim.min.js"></script>
+		<script src="jquery.min.js"></script>
+		<script src="global.js"></script>	
+		<script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
+		<!--  end of js files for app-->
+
+	</head>
+	<body>
+
+		<div id="wrap">
+			
+			<div id="loading"></div>
+
+			<div id="header">
+			<div id="geoIcon" class="iconOn">
+			
+			</div>
+				<h3>Picture<span>Diary</span></h3>
+			</div>
+			
+			<div id="mnav">
+				<div id="checkGeo" class="on">GeoLocation Capture On</div>
+			</div>
+			<div id="yellowflash"></div>
+
+			<div id="show"><span>Tip</span><p>Add a note to your picture diary, make sure to add a title first! B00256152<p></div>
+			
+			<div id="content">
+				<ul id="todoItems"></ul>
+				
+				<div id="footer">
+					<div id="x"></div>
+					<div id="map-canvas"></div>
+					<div class="yellowBox">
+						<input type="text" id="todo" placeholder="Add to Dairy" >
+					</div>
+					
+					<div id="text" class="button" onclick="getLoc()"></div>	
+						
+					
+				</div>
+				
+			</div>
+		</div>
+		
+
+	</body>
+</html>

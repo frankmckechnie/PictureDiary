@@ -1,0 +1,272 @@
+html, html a,p,h1,h2,h3 {
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.005);
+	-webkit-font-smoothing: antialiased;
+
+}
+*:focus {
+    outline: 0;
+}
+body {
+	background-color: #fafafa;
+	font-family: "Helvetica Neue", Arial, "Liberation Sans", FreeSans, sans-serif;
+	font-size:100%;
+	line-height: 1.5;
+	margin: 0px;
+	padding: 0px;
+	min-width:100%;
+}
+h3{
+	padding: 11px 0px 0px 2%;
+	margin-left: 50px;
+	font-size: 1.5em;
+    font-weight: normal;
+    color: white;
+}
+#wrap{
+	width:100%;
+	overflow:auto;
+}
+#header{
+	width:100%;
+	height:60px;
+	background-color: #1d1f17;
+	background-size: 60px 60px;
+	background-image: url('logo.svg');
+	background-repeat: no-repeat;
+}
+#content{
+	width: 100%;
+	height: auto;
+	overflow: visible;
+	padding-bottom: 70px;
+	padding-top: 20px;
+}
+#yellowflash{
+	width:100%; 
+	height: 5px;
+	background-color:#ffd600
+}
+#header span{
+	color: #ffd600;
+}
+.iconOn{
+	float:right;
+	width: 50px;
+	height:60px;
+	background-size: 60px 60px;
+	background-image: url('geoOn.svg');
+    background-repeat: no-repeat;
+}
+.iconOn:active{
+	opacity: 0.6;
+}
+.iconOff{
+	float:right;
+	width: 50px;
+	height:60px;
+	background-size: 60px 60px;
+	background-image: url('geoOff.svg');
+    background-repeat: no-repeat;
+}
+.iconOff:active{
+	opacity: 0.6;
+}
+#show{
+	display: none;
+	width: 100%;
+	padding: 0px 0px 0px 0px;
+	background-color: #424458;
+	color: #f5f4f4;
+	background-size: 300px 300px;
+	background-image: url('tip.svg');
+    background-repeat: no-repeat;
+    background-position: -240px 0px; 
+}
+#show p {
+	padding: 13px 0px 0px 0px;
+	margin-left: 5px;
+	
+}
+#show span{
+	margin: 10px 10px 0px 0px;
+	float:left;
+	padding: 0px 10px;
+	font-size: 1.2em;
+    font-weight: bold;
+	color: #dc6263;
+}
+#todoItems ul {
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+	overflow: auto;
+}
+#todoItems  li {
+	font-family: "Helvetica Neue", Arial, "Liberation Sans", FreeSans, sans-serif;
+	font-size:1.3em;
+	width:90%;
+	margin: 0px auto;
+	padding-bottom: 10px;
+}
+#loading{
+	opacity: 0.7;
+	z-index: 2;
+	position: absolute;
+	width:100%;
+	height:100%;
+	background-color:white;
+	background-image: url('ajax-loader.gif');
+	background-repeat: no-repeat;
+	background-position: center; 
+}
+#mnav{
+	display:none;
+	width:100%;
+	padding: 10px 0px;
+	background-color: #54544c;
+}
+.on{
+	text-indent: 50px;
+    font-size: 1.3em;
+    font-weight: bold;
+    width: 90%;
+ 	margin-left:auto;
+	margin-right:auto;
+    padding-top: 10px;
+    padding-bottom: 10px;	
+	color: white;
+	background-color: #1e201a;
+	background-size: 60px 60px;
+	background-image: url('geoOn.svg');
+    background-repeat: no-repeat;
+    background-position: 0px -5px; 
+}
+.off {
+	text-indent: 50px;
+    font-size: 1.3em;
+    font-weight: bold;
+    width: 90%;
+	opacity: 0.8;
+ 	margin-left:auto;
+	margin-right:auto;
+    padding-top: 10px;
+    padding-bottom: 10px;	
+	color: #1e201a;
+    background-color: #727272;
+	background-size: 60px 60px;
+	background-image: url('geoOff.svg');
+    background-repeat: no-repeat;
+    background-position: 0px -5px; 
+}
+
+
+.filenames{
+	border-top: 10px solid #fee458;
+}
+
+#map-canvas{
+	float:left;
+	z-index: 2;
+	width:100%;
+	height: 300px;
+	position: ;
+}
+#x{
+	float: right;
+	z-index: 3;
+	width: 40px;
+	height: 40px;
+	background-repeat: no-repeat;
+	background-size: 40px 40px;
+	background-image: url('x.svg');
+	display:none;
+}
+#x:active {
+	background-size: 30px 30px;
+	width: 30px;
+	height: 30px;
+}
+#footer{
+	width:100%;
+	position:fixed;
+    left:0px;
+    bottom:0px;
+	background:#fee458;
+}
+
+.button {
+    float:right;
+	height: 60px;
+    width: 20%;
+	color: white;
+	background-color: #1d1f17;
+	background-repeat: no-repeat;
+	background-size: 60px 60px;
+	background-image: url('cross.svg');
+	background-position: center; 
+}
+.button:active {
+	background-color: #1d1f17;
+ 	background-size: 30px 30px;
+	background-image: url('cross.svg');
+}
+.yellowBox{
+	float: left;
+	width: 80%;
+	height:60px;		
+}
+.yellowBox input {
+	float: left;
+    width: 90%;
+	height: 40px;
+	margin-top: 10px;
+	margin-left: 4%;
+	background-color: #fee458;
+	border: 0px solid #171912;
+	border-left: 1px solid #171912;
+	font-size: 1.5em;
+    font-weight: normal;
+    color: #3e4135;
+	padding-left: 10px;
+}
+input:focus { 
+	border: 0px solid #fee458 ;
+}
+.line{
+	width:96.3%;
+	border-left: 1px solid #32352d;
+	border-right: 1px solid #32352d;
+	padding: 0% 2% 0% 1%;
+	margin-bottom: 5%;
+}
+.delete {
+	float:right;
+	font-family: "Helvetica Neue", Arial, "Liberation Sans", FreeSans, sans-serif;
+	font-size:0.8em;
+	padding: 5px 0px 0px 0px;
+	text-decoration: none;
+	color: #f9a825;
+}
+.delete:active {
+	color: #red;
+}
+.todoText{
+	font-family: "Helvetica Neue", Arial, "Liberation Sans", FreeSans, sans-serif;
+	font-size:1.2em;
+	margin: 0px 0px;
+	padding:0px;
+	color: #32342d;
+}
+.picGeo{
+	width:30px;
+	float:left;
+	margin-right: 5px;
+	height: 40px;
+	background-repeat: no-repeat;
+	background-size: 25px 35px;
+	background-image: url('geo.svg');
+	background-position: 0px 0px; 
+}
+.picGeo:active{
+
+}
