@@ -1,34 +1,25 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-    <widget xmlns   = "http://www.w3.org/ns/widgets"
-        xmlns:gap   = "http://phonegap.com/ns/1.0"
+	<widget xmlns   = "http://www.w3.org/ns/widgets"
+		xmlns:gap   = "http://phonegap.com/ns/1.0"
 		xmlns:android   = "http://schemas.android.com/apk/res/android"
-        id          = "com.phonegap.webfrankly"
-        version     = "1.0.0" >
-		
-    <!-- versionCode is optional and Android only -->
+		id          = "com.phonegap.webfrankly"
+		version     = "1.0.0" >
 
-    <name>PictureDiary</name>
-	
-    <description>
-        PictureDiary allows you to save pictures and titles along with the geo Location of where you took that very picture.
-    </description>
+	<name>PictureDiary</name>
+	<description>PictureDiary allows you to save pictures and titles along with the geo Location of where you took that very picture.</description>
 
- <author href="https://webfrankly.com" email="frankmckechnie@gmail.com">
-        Frank Mckechnie
- </author>
-<preference name="android-minSdkVersion" value="14" />
-<gap:platform name="android" />
-<preference name="fullscreen" value="false" />
- <preference name="android-windowSoftInputMode" value="stateVisible" />
-<!-- Default application icon -->
-<icon src="resources/icons/icon.png" />
+	<author href="https://webfrankly.com" email="frankmckechnie@gmail.com">Frank Mckechnie</author>
+	<preference name="android-minSdkVersion" value="14" />
+	<gap:platform name="android" />
+	<preference name="fullscreen" value="false" />
+	<preference name="android-windowSoftInputMode" value="stateVisible" />
+	<icon src="resources/icons/icon.png" />
 
-<preference name="permissions" value="none"/>
-<gap:plugin name="org.apache.cordova.camera" />
-<gap:plugin name="org.apache.cordova.geolocation" />
-<feature name="Camera">
-<param name="android-package" value="org.apache.cordova.camera.CameraLauncher" />
-</feature>
-<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-
+	<preference name="permissions" value="none"/>
+	<gap:plugin name="org.apache.cordova.camera" />
+	<gap:plugin name="org.apache.cordova.geolocation" />
+	<feature name="Camera">
+		<param name="android-package" value="org.apache.cordova.camera.CameraLauncher" />
+	</feature>
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 </widget>
